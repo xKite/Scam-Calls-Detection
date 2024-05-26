@@ -1,11 +1,10 @@
-# aiap17-Ho-Kwok-Leong-827J
-## Scam Calls Detection Pipeline
+# Scam Calls Detection Pipeline
 Full Name: Ho Kwok Leong
 Email Address: Ho_Kwok_Leong@outlook.sg
-### Overview
+## Overview
 This repository contains the pipeline for Scam Calls detection. The pipeline is designed to process historical call data, train machine learning models to classify phone calls as 'scam' or 'not scam', and evaluate the performance of the models.
 
-#### Key Findings from EDA
+### Key Findings from EDA
 1. Call Duration & Financial Loss have negative values.
 2. Need to Convert 'Timestamp' column to datetime dtype.
 3. Country Prefix consist of string instead of all int.
@@ -29,7 +28,7 @@ Timestamp	             Converted to datetime format
 Device Battery	         No processing
 Scam Call	             Target variable, no processing
 
-##### Model Selection
+#### Model Selection
 Three models were evaluated for predicting scam calls: Logistic Regression, Random Forest, and Support Vector Machine (SVM).
 1. Logistic Regression Model:
 Reasoning:
@@ -52,7 +51,7 @@ Effective for Binary Classification: Support Vector Machines (SVMs) are powerful
 Kernel Trick: SVMs can handle non-linear decision boundaries by using kernel functions to map the input features into higher-dimensional space. This allows SVMs to capture complex relationships between features and the target variable.
 Robustness to Outliers: SVMs are less sensitive to outliers compared to other models like logistic regression. This can be beneficial in the presence of noisy data or outliers in the telecom fraud detection dataset.
 
-###### Model Evaluation
+##### Model Evaluation
 Metrics Used: Accuracy, precision, recall, F1-score, ROC-AUC.
 Model Evaluation
 Logistic Regression Model:
